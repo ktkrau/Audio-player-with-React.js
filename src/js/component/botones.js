@@ -1,17 +1,25 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa";
 import { IoPlayForwardSharp, IoPlayBackSharp } from "react-icons/io5";
-const Botones = () => {
+import { CgPlayPauseO } from "react-icons/cg";
+const Botones = (props) => {
 	return (
 		<>
-			<div className="footer-botones">
-				<button id="btn-back">
+			<div className="container">
+				<button
+					className="btn bg-dark btn-back"
+					onClick={props.rewindSong}>
 					<IoPlayBackSharp />
 				</button>
-				<button id="btn-play">
+				<button className="btn bg-dark btn-pause" onClick={props.pause}>
+					<CgPlayPauseO />
+				</button>
+				<button className="btn bg-dark btn-play" onClick={props.play}>
 					<FaPlay />
 				</button>
-				<button id="btn-forward">
+				<button
+					className="btn bg-dark btn-forward"
+					onClick={props.nextSong}>
 					<IoPlayForwardSharp />
 				</button>
 			</div>

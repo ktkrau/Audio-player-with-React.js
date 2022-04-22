@@ -9,9 +9,6 @@ const Home = () => {
 			<div>
 				<Listacanciones />
 			</div>
-			<div>
-				<Botones />
-			</div>
 		</>
 	);
 };

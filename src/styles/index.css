@@ -10,3 +10,35 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.fas {
+    color: black;
+  }
+  
+  .audioControl{
+    display: none;
+  }
+  
+  #list-btn{
+    color: white;
+    border-radius: 0;
+    padding-left: 3px;
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+ 
+  
+  .btn-play, .btn-back, .btn-forward, .btn-pause{
+      color:white;
+      margin: 2px;
+      width: 65px;
+      height: 65px;
+      font-size: 30px;
+    
+  } 
+body{
+    background-color: gray;
+}
