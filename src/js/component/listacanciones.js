@@ -23,6 +23,16 @@ const Listacanciones = () => {
 			});
 		console.log("Hola");
 	};
-	return <h1>Hola React</h1>;
+	return (
+		<>
+			<ul>
+				{songs.length > 0 ? (
+					songs.map((song) => <li key={song.id}>{song.name}</li>)
+				) : (
+					<li>Listado vacío</li>
+				)}
+			</ul>
+		</>
+	);
 };
 export default Listacanciones;

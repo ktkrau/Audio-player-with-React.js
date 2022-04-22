@@ -1,11 +1,19 @@
 import React from "react";
 import Listacanciones from "./listacanciones";
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Botones from "./botones";
 
 //create your first component
 const Home = () => {
-	return <Listacanciones />;
+	return (
+		<>
+			<div>
+				<Listacanciones />
+			</div>
+			<div>
+				<Botones />
+			</div>
+		</>
+	);
 };
 
 export default Home;
